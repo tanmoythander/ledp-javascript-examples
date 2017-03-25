@@ -1,0 +1,9 @@
+/* Your CSS code goes here */
+#brand-logo {
+	width: 150px;
+	position: relative;
+	bottom: 20px;
+}
+#collapse-icon {
+	width: 30px;
+}

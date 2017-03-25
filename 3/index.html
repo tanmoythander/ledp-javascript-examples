@@ -1,0 +1,78 @@
+<!-- Author: Tanmoy Thander -->
+<!-- tanmoythander@gmail.com -->
+<!-- http://github.com/tanmoythander -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags MUST come first in the head
+	Any other head content must come AFTER these tags -->
+	<title>Beginner Bootstrap Template</title>
+	<!-- Bootstrap's CSS -->
+	<link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome CSS -->
+	<link href="../lib/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Your other CSS starts here -->
+	<link rel="stylesheet" type="text/css" href="../lib/css/style.css">
+	<!-- Your other CSS Ends here -->
+</head>
+<body>
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>JavaScript Operators<i class="fa fa-tachometer fa-2x pull-right" aria-hidden="true"></i></h1>
+				<hr>
+				<p>JavaScript Operators Tutorials</p>
+				<a href="../index.html" type="button" class="btn btn-success btn-lg">Home</a>
+				<div class="btn-group btn-group-lg pull-right">
+					<a href="../2/index.html" type="button" class="btn btn-primary">Previous</a>
+					<a href="../4/index.html" type="button" class="btn btn-warning disabled">Next</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="well">
+			<h3>Increment and Decrement</h3>
+			<h4 id="output"></h4>
+			<button class="btn btn-success" onclick="increase();">Increase</button>
+			<button class="btn btn-success" onclick="decrease();">Decrease</button>
+		</div>
+		<div class="well">
+			<h3>Increment and Decrement by 10</h3>
+			<h4 id="output2"></h4>
+			<button class="btn btn-success" onclick="increase10();">Increase</button>
+			<button class="btn btn-success" onclick="decrease10();">Decrease</button>
+		</div>
+		<div class="well">
+			<h3>Add Strings</h3>
+			<p>Click the button below to add string</p>
+			<p id="strings"></p>
+			<button class="btn btn-info" onclick="addString();">Add</button>
+		</div>
+		<div class="well">
+			<h3>Toggling an Image</h3>
+			<img src="img/bulboff.gif" id="bulb">
+			<button id="bulb-switch" class="btn btn-warning btn-lg" onclick="toggle();">On</button>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+	<!-- ##### WARNING: DONT PUT/WRITE HTML BELOW THIS LINE #### -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="../lib/js/jquery.min.js"></script>
+	<!-- Bootstrap's Javascript -->
+	<script src="../lib/js/bootstrap.min.js"></script>
+	<!-- Your Javascript Starts here -->
+	<script src="script.js"></script>
+	<!-- Your Javascript Ends here -->
+</body>
+</html>
