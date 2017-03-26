@@ -15,7 +15,7 @@
 	<!-- Font Awesome CSS -->
 	<link href="../lib/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Your other CSS starts here -->
-	<link rel="stylesheet" type="text/css" href="../lib/css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Your other CSS Ends here -->
 </head>
 <body>
@@ -23,32 +23,31 @@
 		<div class="jumbotron">
 			<div class="container">
 				<i class="fa fa-file-code-o fa-5x pull-right" aria-hidden="true"></i>
-				<h1>JavaScript Introduction</h1>
-				<br>
-				<p>Introduction to javaScript</p>
+				<h1>JavaScript Inputs</h1>
+				<hr>
+				<p>JavaScript Input Tutorials</p>
 				<a href="../index.html" type="button" class="btn btn-success btn-lg">Home</a>
 				<div class="btn-group btn-group-lg pull-right">
-					<a href="#" type="button" class="btn btn-primary disabled">Previous</a>
-					<a href="../2/index.html" type="button" class="btn btn-warning">Next</a>
+					<a href="../3/index.html" type="button" class="btn btn-primary">Previous</a>
+					<a href="../5/index.html" type="button" class="btn btn-warning disabled">Next</a>
 				</div>
 			</div>
 		</div>
 	</header>
 	<div class="container">
 		<div class="well">
-			<h3 id="text1">Click the button below to change this text</h3>
-			<button onclick="changeText1();" class="btn btn-success btn-lg">Click Here</button>
-			<p id="text1-1"></p>
-		</div>
-		<div class="well">
-			<h3>Click the button below to view the basic variables</h3>
-			<button class="btn btn-success" onclick="changeText2();">Click Here</button>
-			<p id="text2-1"></p>
-			<p id="text2-2"></p>
-			<p id="text2-3"></p>
-			<p id="text2-4"></p>
+			<h3>Fill up the form below and press Submit</h3>
+			<input type="text" id="fname" placeholder="First Name" required>
+			<br>
+			<input type="text" id="lname" placeholder="Last Name" required>
+			<br>
+			<input type="email" id="umail" placeholder="Email" required>
+			<br>
+			<h4 class="text-success" id="reply"></h4>
+			<button class="btn btn-primary" onclick="submit();">Submit</button>
 		</div>
 	</div>
+	
 	
 
 

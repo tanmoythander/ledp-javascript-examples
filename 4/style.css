@@ -1,0 +1,10 @@
+#fname, #lname, #umail {
+	width: 50%;
+	min-width: 250px;
+	padding: 10px;
+	background: #80d4ff;
+	color: black;
+	border: 0px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
