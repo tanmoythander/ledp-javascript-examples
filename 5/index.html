@@ -23,34 +23,34 @@
 		<div class="jumbotron">
 			<div class="container">
 				<i class="fa fa-file-code-o fa-5x pull-right" aria-hidden="true"></i>
-				<h1>JavaScript Inputs</h1>
+				<h1>JavaScript Functions</h1>
 				<hr>
-				<p>JavaScript Input Tutorials</p>
+				<p>JavaScript Function Tutorials</p>
 				<a href="../index.html" type="button" class="btn btn-success btn-lg">Home</a>
 				<div class="btn-group btn-group-lg pull-right">
-					<a href="../3/index.html" type="button" class="btn btn-primary">Previous</a>
-					<a href="../5/index.html" type="button" class="btn btn-warning">Next</a>
+					<a href="../4/index.html" type="button" class="btn btn-primary">Previous</a>
+					<a href="../6/index.html" type="button" class="btn btn-warning disabled">Next</a>
 				</div>
 			</div>
 		</div>
 	</header>
 	<div class="container">
 		<div class="well">
-			<h3>Fill up the form below and press Submit</h3>
-			<input type="text" id="fname" placeholder="First Name" class="form-control">
-			<br>
-			<input type="text" id="lname" placeholder="Last Name" class="form-control">
-			<br>
-			<input type="email" id="umail" placeholder="Email" class="form-control">
-			<br>
-			<h4 id="reply"></h4>
-			<button class="btn btn-primary" onclick="submit();">Submit</button>
+			<h3>Area of a circle.</h3>
+			<p>The example below calculates the area in a circle, <br>using the formula <b>area = &pi;R<sup>2</sup></b></p>
+			<input type="number" class="form-control" id="radius" placeholder="Radius in any unit">
+			<h4 id="circle-area"></h4>
+			<button class="btn btn-success" onclick="calculateCircleArea();">Calculate</button>
 		</div>
 		<div class="well">
-			<h3>More about operators</h3>
-			<p>Open the console output to see more operators...</p>
-		</div>
+			<h3>Area of a rectangle.</h3>
+			<p>The example below calculates the area in a rectangle, <br>using the formula <b>area = length x width</b></p>
+			<input type="number" class="form-control" id="length" placeholder="Length...">
+			<input type="number" class="form-control" id="width" placeholder="width...">
+			<h4 id="rectangle-area"></h4>
+			<button class="btn btn-success" onclick="calculateRectangleArea();">Calculate</button>
 	</div>
+	
 	
 	
 
