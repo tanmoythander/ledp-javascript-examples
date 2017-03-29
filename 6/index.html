@@ -1,0 +1,104 @@
+<!-- Author: Tanmoy Thander -->
+<!-- tanmoythander@gmail.com -->
+<!-- http://github.com/tanmoythander -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags MUST come first in the head
+	Any other head content must come AFTER these tags -->
+	<title>JavaScript Examples</title>
+	<!-- Bootstrap's CSS -->
+	<link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome CSS -->
+	<link href="../lib/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Your other CSS starts here -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Your other CSS Ends here -->
+</head>
+<body>
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<i class="fa fa-file-code-o fa-5x pull-right" aria-hidden="true"></i>
+				<h1>JavaScript Arrays and loops</h1>
+				<hr>
+				<p>JavaScript Array and Loop Tutorials</p>
+				<a href="../index.html" type="button" class="btn btn-success btn-lg">Home</a>
+				<div class="btn-group btn-group-lg pull-right">
+					<a href="../5/index.html" type="button" class="btn btn-primary">Previous</a>
+					<a href="../7/index.html" type="button" class="btn btn-warning disabled">Next</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="well">
+					<h3 class="text-primary">Student's list</h3>
+					<p>The list updates after every operation</p>
+					<ol id="list"></ol>
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="well">
+							<h3 class="text-success">Add a student</h3>
+							<input type="text" class="form-control" id="add-student" placeholder="Student's Name">
+							<button class="btn btn-success btn-lg" onclick="addStudent();">Add Student</button>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="well">
+							<h3 class="text-warning">Edit student</h3>
+							<input type="number" id="edit-index" class="form-control" min="1" placeholder="Number">
+							<input type="text" id="edit-student" class="form-control" placeholder="Student's Name">
+							<button class="btn btn-warning btn-lg" onclick="updateStudent();">Update</button>
+							<span id="update-msg"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="well">
+							<h3 class="text-danger">Delete last student</h3>
+							<button class="btn btn-danger btn-lg" ondblclick="deleteStudent();" onclick="showWarning('delete-msg');">Delete</button>
+							<span id="delete-msg"></span>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="well">
+							<h3 class="text-danger">Delete a specific student</h3>
+							<p>Select or enter the serial number of the student</p>
+							<input type="number" id="delete-index" class="form-control" min="1" placeholder="Number">
+							<button class="btn btn-danger btn-lg" onclick="showWarning('delete-msg-2');" ondblclick="deleteSpecificStudent();">Delete</button>
+							<span id="delete-msg-2"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+
+
+
+
+
+	<!-- ##### WARNING: DONT PUT/WRITE HTML BELOW THIS LINE #### -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="../lib/js/jquery.min.js"></script>
+	<!-- Bootstrap's Javascript -->
+	<script src="../lib/js/bootstrap.min.js"></script>
+	<!-- Your Javascript Starts here -->
+	<script src="script.js"></script>
+	<!-- Your Javascript Ends here -->
+</body>
+</html>
