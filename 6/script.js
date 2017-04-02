@@ -31,17 +31,16 @@ function showWarning(elementId) {
 	document.getElementById(elementId).style.color = "red"; // sets the text color to red
 }
 function deleteStudent(position) {
-	if (position) {
+	if (position == "first") {
 		students.shift(); // deletes the first array element
 	}
-	else {
+	else if (position == "last") {
 		students.pop(); // deletes the last array element
 	}
-	showList(); // updates the list
-	document.getElementById("delete-msg").innerHTML = ""; // remove the delete message
-}
-function deleteAllStudent() {
-	students = []; // Empty the array
+	else if (position == 'all') {
+		students = []; // Empty the array
+	}
+
 	showList(); // updates the list
 	document.getElementById("delete-msg").innerHTML = ""; // remove the delete message
 }
@@ -61,7 +60,7 @@ function deleteSpecificStudent() {
 function updateStudent() {
 	var index = parseInt(document.getElementById("edit-index").value) - 1; // retrieves the value from the input
 	var newName = document.getElementById("edit-student").value; // retrieves the value from the input
-	if(index < students.length && index > -1) {
+	if(index < students.length && index > -1) { // check if the index is valid/invalid
 		students[index] = newName; // updates the name in the array
 		showList(); // updates the list
 		document.getElementById("update-msg").innerHTML = ""; // remove the update message
