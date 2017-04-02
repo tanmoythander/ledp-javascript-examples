@@ -1,0 +1,4 @@
+.container .col-xs-6 .well {
+	height: 220px;
+	overflow: auto;
+}
