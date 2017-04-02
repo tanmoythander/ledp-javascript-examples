@@ -55,7 +55,7 @@
 					<div class="col-xs-6">
 						<div class="well">
 							<h3 class="text-warning">Edit student</h3>
-							<input type="number" id="edit-index" class="form-control" min="1" placeholder="Number">
+							<input type="number" id="edit-index" class="form-control" min="0" placeholder="Number">
 							<input type="text" id="edit-student" class="form-control" placeholder="Student's Name">
 							<button class="btn btn-warning btn-lg" onclick="updateStudent();">Update</button>
 							<span id="update-msg"></span>
@@ -65,16 +65,18 @@
 				<div class="row">
 					<div class="col-xs-6">
 						<div class="well">
-							<h3 class="text-danger">Delete last student</h3>
-							<button class="btn btn-danger btn-lg" ondblclick="deleteStudent();" onclick="showWarning('delete-msg');">Delete</button>
-							<span id="delete-msg"></span>
+							<h3 class="text-danger">Delete student</h3>
+							<button class="btn btn-danger" ondblclick="deleteStudent(true);" onclick="showWarning('delete-msg');">Delete First</button>
+							<button class="btn btn-danger" ondblclick="deleteStudent(false);" onclick="showWarning('delete-msg');">Delete Last</button>
+							<button class="btn btn-danger" ondblclick="deleteAllStudent();" onclick="showWarning('delete-msg');">Delete All</button>
+							<p id="delete-msg"></p>
 						</div>
 					</div>
 					<div class="col-xs-6">
 						<div class="well">
 							<h3 class="text-danger">Delete a specific student</h3>
 							<p>Select or enter the serial number of the student</p>
-							<input type="number" id="delete-index" class="form-control" min="1" placeholder="Number">
+							<input type="number" id="delete-index" class="form-control" min="0" placeholder="Number">
 							<button class="btn btn-danger btn-lg" onclick="showWarning('delete-msg-2');" ondblclick="deleteSpecificStudent();">Delete</button>
 							<span id="delete-msg-2"></span>
 						</div>
